@@ -5,6 +5,9 @@ import { Noto_Sans } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import Navbar from '@/components/Navbar'
+import Socials from '@/components/Socials'
+
 const notoSans = Noto_Sans({
   weight: ["400", "500"],
   subsets: ['latin'],
@@ -25,22 +28,17 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${notoSans.className} px-8`}>
         <header className="fixed w-full flex justify-between py-6">
-          <div className="flex items-center gap-x-1">
-            <Image src="/logo.png" alt="Logo" width={24} height={24} />
-            <div className="font-medium text-2xl">Dylan Lau</div>
-          </div>
-          <nav className="flex items-center gap-x-10">
-            <Link href="/">Projects</Link>
-            <Link href="/about">About</Link>
-            <Link href="/photos">Photos</Link>
-            <Link href="/favourites">Favourites</Link>
-            <button>
-              <Image src="/moon.svg" alt="moon" width={22} height={22} />
-            </button>
-          </nav>
+          <Link href="/">
+            <div className="flex items-center gap-x-1">
+              <Image src="/logo.png" alt="Logo" width={24} height={24} />
+              <div className="font-medium text-2xl">Dylan Lau</div>
+            </div>
+          </Link>
+          <Navbar />
         </header>
-        <main className="flex min-h-screen flex-col items-center justify-between pt-20">
+        <main className="flex min-h-screen flex-col pt-20">
           {children}
+          <Socials />
         </main>
       </body>
     </html>
