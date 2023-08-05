@@ -3,11 +3,24 @@
 @tailwind utilities;
 
 :root {
-  --color-bkg: 255 255 255;
   --color-primary: 0 0 0;
+
+  --background-start-rgb: 255 255 255;
+  --background-end-rgb: 255 255 255;
 }
 
 :root[data-theme="dark"] {
-  --color-bkg: 17 33 45;
   --color-primary: 255 255 255;
+
+  --background-start-rgb: 37 55 69;
+  --background-end-rgb: 6 20 27;
+}
+
+body {
+  background: linear-gradient(
+      to top,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
 }
