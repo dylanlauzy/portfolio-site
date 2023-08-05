@@ -27,7 +27,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <body className={`${notoSans.className} relative m-auto px-8 max-w-screen-xl h-screen text-primary`}>
+        <body className={`${notoSans.className} relative m-auto px-8 max-w-screen-xl h-screen xl:max-h-[55rem] text-primary xl:border-4`}>
         <Providers>
           <header className="fixed max-w-screen-xl w-full flex justify-between py-6 pr-16">
             <Link href="/">
