@@ -8,9 +8,9 @@ const ProjectPreviews = () => {
   const [hoveredImage, setHoveredImage] = useState("");
 
   return (
-    <section className="flex flex-col pb-6 2xl:pb-12 2xl:pt-6 gap-y-8 items-center grow max-w-3xl">
-      <div className="grow px-0 md:px-24 lg:px-10 flex w-full">
-        <div className="flex relative border-2 w-full max-h-96">
+    <section className="flex flex-col pb-6 2xl:pb-12 pt-6 gap-y-8 items-center grow max-w-5xl">
+      <div className="grow px-0 lg:px-10 flex w-full">
+        <div className="flex relative border-2 w-full">
           {hoveredImage ? (
             <Image
               alt="project preview"

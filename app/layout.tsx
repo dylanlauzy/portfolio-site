@@ -27,9 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-        <body className={`${notoSans.className} relative m-auto px-8 max-w-screen-xl h-screen xl:max-h-[55rem] text-primary xl:border-4`}>
+        <body className={`${notoSans.className} relative m-auto px-8 h-screen text-primary`}>
         <Providers>
-          <header className="fixed max-w-screen-xl w-full flex justify-between py-6 pr-16">
+          <header className="fixed  w-full flex justify-between py-6 pr-16">
             <Link href="/">
               <div className="flex items-center gap-x-1">
                 <Image src="/icons/logo.png" alt="Logo" width={24} height={24} />
