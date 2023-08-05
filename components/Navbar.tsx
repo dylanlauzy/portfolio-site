@@ -15,7 +15,7 @@ const Navbar = () => {
       <NavItem route="photos" currPath={path}/>
       <NavItem route="favourites" currPath={path}/>
       <button>
-        <Image src="/moon.svg" alt="moon" width={22} height={22} />
+        <Image src="/icons/moon.svg" alt="moon" width={22} height={22} />
       </button>
     </nav>
   )

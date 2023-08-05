@@ -27,16 +27,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${notoSans.className} px-8`}>
-        <header className="fixed w-full flex justify-between py-6">
+        <header className="w-full flex justify-between py-6">
           <Link href="/">
             <div className="flex items-center gap-x-1">
-              <Image src="/logo.png" alt="Logo" width={24} height={24} />
+              <Image src="/icons/logo.png" alt="Logo" width={24} height={24} />
               <div className="font-medium text-2xl">Dylan Lau</div>
             </div>
           </Link>
           <Navbar />
         </header>
-        <main className="flex min-h-screen flex-col pt-20">
+        <main className="flex flex-col">
           {children}
           <Socials />
         </main>

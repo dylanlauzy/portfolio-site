@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "NBA Face Off",
+    "date": "July 2023",
+    "description": "Turning NBA player statistics into a card game. NBA Face Off is a multiplayer, web-based card game designed around real-time NBA player statistics. Developed using React, Apollo GraphQL, AWS Lambda, DynamoDB, Serverless, and Python.",
+    "image": "/images/face-off.png"
+  },
+  {
+    "id": 2,
+    "title": "Panda Path",
+    "date": "May 2023",
+    "description": "Providing peace of mind to Vancouver commuters. Panda Path is a mobile application that uses VPD crime data to help users safely get where they want to go. This full-stack project was built with MongoDB and ExpressJS for the backend and React Native for the frontend.",
+    "image": "/images/panda-path.png"
+  },
+  {
+    "id": 3,
+    "title": "Project Panini",
+    "date": "January 2023",
+    "description": "Leveraging LLMs to help users come up with their next project idea. Project Panini uses the OpenAI API to turn user interests into full-fledged project ideas. Built with React.",
+    "image": "/images/project-panini.jpg"
+  },
+  {
+    "id": 3,
+    "title": "Project Panini",
+    "date": "January 2023",
+    "description": "Leveraging LLMs to help users come up with their next project idea. Project Panini uses the OpenAI API to turn user interests into full-fledged project ideas. Built with React.",
+    "image": "/images/project-panini.jpg"
+  }
+]
