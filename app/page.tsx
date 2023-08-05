@@ -9,7 +9,7 @@ const roboto = Roboto({
 
 export default function Home() {
   return (
-    <main className={"" + " " + roboto.className}>
+    <main className={"pt-20 h-full flex flex-col" + " " + roboto.className}>
       {/* TODO: turn span into its own client component for allowing toggle of title */}
       <div className="max-w-lg text-lg leading-6">I'm a <span className="text-red-600">developer</span> from Singapore exploring how data and software can be applied to novel problems</div>
       <section className="flex justify-between h-full">

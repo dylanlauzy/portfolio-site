@@ -19,12 +19,5 @@
     "date": "January 2023",
     "description": "Leveraging LLMs to help users come up with their next project idea. Project Panini uses the OpenAI API to turn user interests into full-fledged project ideas. Built with React.",
     "image": "/images/project-panini.jpg"
-  },
-  {
-    "id": 3,
-    "title": "Project Panini",
-    "date": "January 2023",
-    "description": "Leveraging LLMs to help users come up with their next project idea. Project Panini uses the OpenAI API to turn user interests into full-fledged project ideas. Built with React.",
-    "image": "/images/project-panini.jpg"
   }
 ]

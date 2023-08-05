@@ -8,20 +8,22 @@ const ProjectPreviews = () => {
   const [hoveredImage, setHoveredImage] = useState("");
 
   return (
-    <section className="flex flex-col gap-y-8 items-center grow max-w-3xl">
-      <div className="relative flex w-[35rem] h-80 border-2">
-        {hoveredImage ? (
-          <Image
-            alt="project preview"
-            src={hoveredImage}
-            fill={true}
-            className="object-cover"/>
-        ) : (
-          <div className="text-gray-300 m-auto">Hover for preview</div>
-        )}
+    <section className="flex flex-col pb-20 pt-6 gap-y-8 items-center grow max-w-3xl">
+      <div className="grow px-10 flex w-full">
+        <div className="flex relative border-2 w-full max-h-96">
+          {hoveredImage ? (
+            <Image
+              alt="project preview"
+              src={hoveredImage}
+              fill={true}
+              className="object-cover"/>
+          ) : (
+            <div className="text-gray-300 m-auto">Hover for preview</div>
+          )}
+        </div>
       </div>
 
-      <div className="flex flex-col w-full h-72 overflow-scroll">
+      <div className="flex flex-col w-full">
         {projects.map((project, index) => (
           <div
             key={project.id}

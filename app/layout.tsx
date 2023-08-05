@@ -26,8 +26,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${notoSans.className} px-8`}>
-        <header className="w-full flex justify-between py-6">
+      <body className={`${notoSans.className} relative m-auto px-8 max-w-screen-xl h-screen`}>
+        <header className="fixed max-w-screen-xl w-full flex justify-between py-6">
           <Link href="/">
             <div className="flex items-center gap-x-1">
               <Image src="/icons/logo.png" alt="Logo" width={24} height={24} />
@@ -36,10 +36,8 @@ export default function RootLayout({
           </Link>
           <Navbar />
         </header>
-        <main className="flex flex-col">
-          {children}
-          <Socials />
-        </main>
+        {children}
+        <Socials />
       </body>
     </html>
   )
