@@ -6,7 +6,7 @@ const NavItem = ({route, currPath}: {route: string, currPath: string}) => {
   return (
     <Link
       href={`/${route}`}
-      className={"transition-all" + (isActive ? " text-black" : " text-gray-400 hover:text-black")}
+      className={"transition-all" + (isActive ? " text-primary" : " text-gray-400 hover:text-primary")}
     >
         {route.charAt(0).toUpperCase() + route.slice(1)}
     </Link>

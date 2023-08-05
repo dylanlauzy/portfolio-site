@@ -5,6 +5,7 @@ import { Noto_Sans } from 'next/font/google'
 import Image from 'next/image'
 import Link from 'next/link'
 
+import Providers from '@/components/Providers'
 import Navbar from '@/components/Navbar'
 import Socials from '@/components/Socials'
 
@@ -26,19 +27,21 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${notoSans.className} relative m-auto px-8 max-w-screen-xl h-screen`}>
-        <header className="fixed max-w-screen-xl w-full flex justify-between py-6">
-          <Link href="/">
-            <div className="flex items-center gap-x-1">
-              <Image src="/icons/logo.png" alt="Logo" width={24} height={24} />
-              <div className="font-medium text-2xl">Dylan Lau</div>
-            </div>
-          </Link>
-          <Navbar />
-        </header>
-        {children}
-        <Socials />
-      </body>
+        <body className={`${notoSans.className} relative m-auto px-8 max-w-screen-xl h-screen text-primary bg-bkg`}>
+        <Providers>
+          <header className="fixed max-w-screen-xl w-full flex justify-between py-6 pr-16">
+            <Link href="/">
+              <div className="flex items-center gap-x-1">
+                <Image src="/icons/logo.png" alt="Logo" width={24} height={24} />
+                <div className="font-medium text-2xl">Dylan Lau</div>
+              </div>
+            </Link>
+            <Navbar />
+          </header>
+          {children}
+          <Socials />
+        </Providers>
+        </body>
     </html>
   )
 }
