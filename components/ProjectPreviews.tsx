@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import projects from "../data/projects.json";
+import { AspectRatio } from "./ui/aspect-ratio";
 
 const ProjectPreviews = () => {
   const [hoveredImage, setHoveredImage] = useState("");
