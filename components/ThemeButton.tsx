@@ -3,7 +3,6 @@
 import { useTheme } from 'next-themes'
 
 import Image from 'next/image'
-import { Button } from './ui/button'
 
 import {
   DropdownMenu,
@@ -17,11 +16,11 @@ const ThemeButton = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <Button variant="dim" size="icon">
+        <button className="w-[22px] h-[22px] relative">
           <Image className="absolute transition-all dark:-rotate-90 dark:scale-0rotate-0 scale-100 transition-all dark:-rotate-90 dark:scale-0" src="/icons/sun.svg" alt="sun" width={22} height={22} />
-          <Image className="absolute hover:bg-transparent rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" src="/icons/moon.svg" alt="moon" width={22} height={22} />
+          <Image className="hover:bg-transparent rotate-90 scale-0 transition-all dark:rotate-0 dark:scale-100" src="/icons/moon.svg" alt="moon" width={22} height={22} />
           <span className="sr-only">Toggle theme</span>
-        </Button>
+        </button>
       </DropdownMenuTrigger>
       <DropdownMenuContent>
         <DropdownMenuItem onClick={() => setTheme("light")}>

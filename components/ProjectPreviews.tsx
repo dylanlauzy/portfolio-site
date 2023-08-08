@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import projects from "../data/projects.json";
+import Link from "next/link";
+import projects from "@/data/projects.json";
 
 const ProjectPreviews = () => {
   const [hoveredImage, setHoveredImage] = useState("");
@@ -25,7 +26,8 @@ const ProjectPreviews = () => {
 
       <div className="flex flex-col w-full">
         {projects.map((project, index) => (
-          <div
+          <Link
+            href={`/projects/${project.id}`}
             key={project.id}
             className={`flex gap-x-5 py-4 px-8 ${
               index == 0 ? "border-t-2" : ""
@@ -46,7 +48,7 @@ const ProjectPreviews = () => {
             <div className="text-sm shrink line-clamp-3">
               {project.description}
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </section>
