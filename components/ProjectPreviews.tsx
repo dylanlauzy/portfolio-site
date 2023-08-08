@@ -3,14 +3,13 @@
 import { useState } from "react";
 import Image from "next/image";
 import projects from "../data/projects.json";
-import { AspectRatio } from "./ui/aspect-ratio";
 
 const ProjectPreviews = () => {
   const [hoveredImage, setHoveredImage] = useState("");
 
   return (
     <section className="flex flex-col pb-6 2xl:pb-12 pt-6 gap-y-8 items-center grow max-w-5xl">
-      <div className="grow px-0 lg:px-10 flex w-full">
+      <div className="grow px-0 lg:px-10 flex aspect-video max-w-full">
         <div className="flex relative border-2 w-full">
           {hoveredImage ? (
             <Image
