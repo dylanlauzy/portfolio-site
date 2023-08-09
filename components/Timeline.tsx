@@ -27,8 +27,8 @@ const Timeline = ({ events }: {events: ProjectProps[]}) => {
         <div className="flex flex-col">
           <div className="flex w-8 h-8 rounded-full border-2 border-dashed w-8 h-8"></div>
         </div>
-        <div className="flex flex-col gap-y-1 w-full">
-          <h1 className="text-sm text-gray-300">Coming soon...</h1>
+        <div className="flex grow gap-y-1 w-full">
+          <h1 className="text-sm text-gray-300 my-auto">Coming soon...</h1>
         </div>
       </div>
     </div>

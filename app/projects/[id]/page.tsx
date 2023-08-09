@@ -7,6 +7,12 @@ import Timeline from "@/components/Timeline"
 const page = ({ params }: { params: { id: string}}) => {
   const project = projects.find((project) => project.id === params.id)
 
+  if (!project) {
+    return (
+      <div>Project not found</div>
+    )
+  }
+
   return (
     // Introduce breadcrumb
     <ScrollArea className="w-full">
@@ -39,7 +45,7 @@ const page = ({ params }: { params: { id: string}}) => {
             <div className="w-full flex flex-col gap-y-2">
               <h4 className="font-bold">Features</h4>
               <ul className="flex flex-col gap-y-3 text-sm">
-                {project?.features?.map((feature) => (
+                {project?.features?.map((feature: string) => (
                   <li className="flex items-start gap-x-1">
                     <Image className="mt-1" src="/icons/check.svg" alt="check" width={16} height={16}></Image>
                     <span>{feature}</span>
@@ -49,7 +55,7 @@ const page = ({ params }: { params: { id: string}}) => {
             </div>
             <div className="w-full flex flex-col gap-y-2">
               <h4 className="font-bold">Timeline</h4>
-              <Timeline events={project?.timeline}/>
+              {project.timeline && <Timeline events={project.timeline}/>}
             </div>
           </div>
         </section>
