@@ -4,7 +4,23 @@
     "title": "NBA Face Off",
     "date": "July 2023",
     "description": "Turning NBA player statistics into a card game. NBA Face Off is a multiplayer, web-based card game designed around real-time NBA player statistics. Developed using React, Apollo GraphQL, AWS Lambda, DynamoDB, Serverless, and Python.",
-    "image": "/images/face-off.png"
+    "image": "/images/face-off.png",
+    "technologies": [
+      "Apollo GraphQL",
+      "AWS",
+      "DynamoDB",
+      "React",
+      "Tailwind",
+      "Chakra UI"
+    ],
+    "description_long": "Inspired by card games like Top Trumps, NBA Face Off, is a web-based card game where players can connect with friends around the world and go head to head in a battle of luck and NBA player knowledge. Using real statistics for the past season of the NBA queried from the nba_api, players compete to take all their opponent's cards by choosing a game statistic which they think their player performed better at than their opponent.",
+    "motivations": "Growing up, I couldn't seem to get my brain and body to dribble, shoot and throw passes across the court so it never occurred to me that it would be fun watching other people do it for a living.\n\nI followed e-sports occasionally and loved competing in rock climbing, but it was only after getting sucked into the career of Michael Jordan in The Last Dance during the Christmas of my first year at UBC did I start to see how the narratives of sports can be so captivating.\n\nSince then, following the NBA and learning about different stars and eras has become a big hobby of mine. I love basketball, my friends love basketball and after watching friends obsess over player stats in their fantasy league, I thought it would be fun to turn that obsession with stats into its own game.",
+    "features": [
+      "Dynamic user interface built with React and Tailwind",
+      "Realtime game updates enabled by websocket connections",
+      "Internal Apollo GraphQL API for reading and modifying database of game states",
+      "Cloud-hosted database of up-to-date player statistics updated regularly with AWS lambda functions"
+    ]
   },
   {
     "id": "2",
