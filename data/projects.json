@@ -44,13 +44,25 @@
     "title": "Panda Path",
     "date": "May 2023",
     "description": "Providing peace of mind to Vancouver commuters. Panda Path is a mobile application that uses VPD crime data to help users safely get where they want to go. This full-stack project was built with MongoDB and ExpressJS for the backend and React Native for the frontend.",
-    "image": "/images/panda-path.png"
+    "image": "/images/panda-path.png",
+    "technologies": [
+      "React Native",
+      "Google Maps Platform API",
+      "MongoDB",
+      "Express"
+    ]
   },
   {
     "id": "3",
     "title": "Project Panini",
     "date": "January 2023",
     "description": "Leveraging LLMs to help users come up with their next project idea. Project Panini uses the OpenAI API to turn user interests into full-fledged project ideas. Built with React.",
-    "image": "/images/project-panini.jpg"
+    "image": "/images/project-panini.jpg",
+    "technologies": [
+      "OpenAI API",
+      "GPT-3.5",
+      "React",
+      "Material UI"
+    ]
   }
 ]

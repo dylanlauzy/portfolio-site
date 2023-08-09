@@ -17,14 +17,14 @@ const page = ({ params }: { params: { id: string}}) => {
     // Introduce breadcrumb
     <ScrollArea className="w-full">
       <div className="w-full max-w-screen-xl mx-auto flex flex-col gap-y-7 px-10">
-        <section className="flex flex-col lg:flex-row m w-full border-y-2 py-7 px-6 gap-x-7 gap-y-8">
-          <div className="lg:max-w-lg flex flex-col gap-y-7">
+        <section className="flex flex-col m w-full border-y-2 py-7 px-6 gap-x-7 gap-y-8">
+          <div className="flex flex-col gap-y-7">
             <div className="flex flex-col gap-y-2">
-              <h2 className="text-xl text-gray-500">{project?.date}</h2>
-              <h1 className="text-4xl text-primary">{project?.title}</h1>
-              <h3 className="text-sm text-gray-400">{project ? project.technologies?.join(" \u2022 "): ""}</h3>
+              <h2 className="text-xl lg:text-3xl text-gray-500">{project?.date}</h2>
+              <h1 className="text-4xl lg:text-5xl text-primary">{project?.title}</h1>
+              <h3 className="text-sm lg:text-lg text-gray-400">{project ? project.technologies?.join(" \u2022 "): ""}</h3>
             </div>
-            <div className="break-words">{project?.description_long}</div>
+            <div className="">{project?.description_long}</div>
           </div>
           <div className="grow flex">
             <div className="relative w-full aspect-video my-auto">
@@ -32,6 +32,7 @@ const page = ({ params }: { params: { id: string}}) => {
                 src={project ? project.image : ""}
                 alt="project preview"
                 fill
+                className="object-cover object-left-top"
               />
             </div>
           </div>
