@@ -2,6 +2,7 @@ import projects from "@/data/projects.json"
 
 import Image from "next/image"
 import { ScrollArea } from "@/components/ui/scroll-area"
+import Timeline from "@/components/Timeline"
 
 const page = ({ params }: { params: { id: string}}) => {
   const project = projects.find((project) => project.id === params.id)
@@ -48,7 +49,7 @@ const page = ({ params }: { params: { id: string}}) => {
             </div>
             <div className="w-full flex flex-col gap-y-2">
               <h4 className="font-bold">Timeline</h4>
-              <div className="whitespace-pre-wrap text-sm">{project?.motivations}</div>
+              <Timeline events={project?.timeline}/>
             </div>
           </div>
         </section>
