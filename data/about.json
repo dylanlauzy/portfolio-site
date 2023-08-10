@@ -1,0 +1,34 @@
+{
+  "experiences": [
+    {
+      "organisation": "Metrized Consulting",
+      "position": "Junior Machine Learning Engineer",
+      "duration": "2023—Present"
+    },
+    {
+      "organisation": "Google Developer Student Club UBC",
+      "position": "VP Events & Logistics",
+      "duration": "2021—Present"
+    },
+    {
+      "organisation": "University of British Columbia",
+      "position": "BSc Mathematics and Computer Science",
+      "duration": "2021—Present"
+    },
+    {
+      "organisation": "Computer Science Dept. UBC",
+      "position": "Teaching Assistant CPSC 213, Introduction to Computer Systems",
+      "duration": "2023"
+    },
+    {
+      "organisation": "Mathematics Dept. UBC",
+      "position": "Teaching Assistant MATH 101, Integral Calculus with Applications",
+      "duration": "2023"
+    },
+    {
+      "organisation": "Singapore Army",
+      "position": "Third Sergeant Military Police Enforcement Unit",
+      "duration": "2019—2021"
+    }
+  ]
+}

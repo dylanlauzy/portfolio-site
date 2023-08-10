@@ -12,8 +12,6 @@ const Navbar = () => {
     <nav className="flex items-center gap-x-10">
       <NavItem route="about" currPath={path}/>
       <NavItem route="projects" currPath={path}/>
-      <NavItem route="photos" currPath={path}/>
-      <NavItem route="favourites" currPath={path}/>
       <ThemeButton />
     </nav>
   )
