@@ -26,9 +26,9 @@ export default function RootLayout({
         <body className={`${roboto.className} relative m-auto px-8 h-screen text-primary bg-background`}>
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <Header />
-          <main className={"pt-20 h-full flex flex-col" + " " + roboto.className}>
-            {children}
-          </main>
+            <main className={"pt-20 h-full flex flex-col" + " " + roboto.className}>
+                {children}
+            </main>
           <Socials />
         </ThemeProvider>
         </body>

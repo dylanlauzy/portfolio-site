@@ -2,13 +2,11 @@
 
 import { useState } from 'react';
 
-import Image from 'next/image';
-
 
 const RotatingTitle = () => {
   const [titleIndex, setTitleIndex] = useState(0);
   
-  const titles = ["developer", "rock climber", "ML enthusiast", "chess player"];
+  const titles = ["developer", "student", "rock climber", "pokemon trainer", "ML engineer", "chess player"];
   
   return (
     <button

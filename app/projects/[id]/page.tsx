@@ -1,3 +1,5 @@
+"use client"
+import { motion } from "framer-motion"
 import projects from "@/data/projects.json"
 
 import Image from "next/image"
@@ -16,7 +18,12 @@ const page = ({ params }: { params: { id: string}}) => {
   return (
     // Introduce breadcrumb
     <ScrollArea className="w-full">
-      <div className="w-full max-w-screen-xl mx-auto flex flex-col gap-y-7 px-10">
+      <motion.div
+        className="w-full max-w-screen-xl mx-auto flex flex-col gap-y-7 px-10 pb-10"
+        transition={{delay: 0.1, duration: 1}}
+        initial={{opacity: 0, y: 20}}
+        animate={{opacity: 1, y: 0}}
+      >
         <section className="flex flex-col m w-full border-y-2 py-7 px-6 gap-x-7 gap-y-8">
           <div className="flex flex-col gap-y-7">
             <div className="flex flex-col gap-y-2">
@@ -56,11 +63,11 @@ const page = ({ params }: { params: { id: string}}) => {
             </div>
             <div className="w-full flex flex-col gap-y-2">
               <h4 className="font-bold">Timeline</h4>
-              {project.timeline && <Timeline events={project.timeline}/>}
+              {project.timeline && <Timeline events={project.timeline} isActive={project.is_active}/>}
             </div>
           </div>
         </section>
-      </div>
+      </motion.div>
     </ScrollArea>
   )
 }

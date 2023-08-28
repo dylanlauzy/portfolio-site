@@ -37,7 +37,8 @@
         "date": "May 25th 2023",
         "body": "Started learning Figma and creating basic game UI"
       }
-    ]
+    ],
+    "is_active": true
   },
   {
     "id": "2",
@@ -49,8 +50,42 @@
       "React Native",
       "Google Maps Platform API",
       "MongoDB",
-      "Express"
-    ]
+      "Express",
+      "Axios",
+      "JSON Web Tokens"
+    ],
+    "description_long": "Built with three friends at StormHacks 2023, Panda Path is a iOS and Android app built with React Native that helps people safely get where they want to go. The app allows users to enter their destination and generates a path that avoids areas deemed dangerous by Vancouver Police crime data. Working on the app's backend, I designed and implemented the REST API for managing authentication and user data using Express JS, JSON Web Tokens. Collaborating with the designers on our team, I then worked on turning our design into a dynamic frontend with React Native.",
+    "motivations": "A common concern we identified among students going to school in a new city is the fear of ending up in a dangerous part of town while getting around. Our solution was to use Vancouver Police Department crime data to highlight dangerous areas and generate optimal walking paths that avoid those areas. Over 24 hours, we worked through the night to deliver on our idea and this is what we ended up with.",
+    "features": [
+      "Cross-platform app built with React Native and CSS",
+      "REST API for accessing user data built in Express",
+      "User access secured using bcrypt encryption and JSON Web Tokens",
+      "Path generation and visualisation with the Google Maps Platform API",
+      "Database of user data and preferences hosted with MongoDB Atlas"
+    ],
+    "timeline": [
+      {
+        "icon": "/icons/moon.svg",
+        "date": "May 20th 2023",
+        "body": "Team came together for brainstorming"
+      },
+      {
+        "icon": "/icons/moon.svg",
+        "date": "May 20th 2023",
+        "body": "Delegation of work"
+      },
+      {
+        "icon": "/icons/moon.svg",
+        "date": "May 20th 2023",
+        "body": "Coding tirelessly through the night"
+      },
+      {
+        "icon": "/icons/moon.svg",
+        "date": "May 20th 2023",
+        "body": "Delegation of work"
+      }
+    ],
+    "is_active": false
   },
   {
     "id": "3",

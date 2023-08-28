@@ -1,4 +1,7 @@
+"use client"
 import projects from "@/data/projects.json"
+
+import { motion } from "framer-motion"
 
 import Image from "next/image"
 import Link from "next/link"
@@ -15,12 +18,17 @@ const notoSans = Noto_Sans({
 const page = () => {
   return (
     <ScrollArea className="w-full">
-      <div className="w-full max-w-screen-2xl mx-auto flex flex-col gap-y-7 px-10">
+      <motion.div
+        className="w-full max-w-screen-lg 2xl:max-w-screen-2xl mx-auto flex flex-col px-10"
+        transition={{delay: 0.1, duration: 1}}
+        initial={{opacity: 0, y: 20}}
+        animate={{opacity: 1, y: 0}}
+      >
         <div className={`w-full text-2xl xl:text-3xl py-10 ${notoSans.className}`}>
         "True north in software is often the direction that combines ambiguity and evidence of fertility in the most alluring way: the direction of maximal interestingness.”
         </div>
         {projects.map((project, key) => (
-          <Link href={`/projects/${project.id}`} className={`flex ${key % 2 ? "flex-row-reverse": ""} w-full border-t-2 py-12 gap-x-3`}>
+          <Link href={`/projects/${project.id}`} className={`flex w-full border-t-2 py-12 gap-x-3`}>
             <div className="relative w-full aspect-[5/3] border-2">
               <Image
                 src={project.image}
@@ -36,7 +44,7 @@ const page = () => {
             </div>
           </Link>
         ))}
-      </div>
+      </motion.div>
     </ScrollArea>
   )
 }
