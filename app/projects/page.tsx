@@ -1,8 +1,6 @@
-"use client"
 import projects from "@/data/projects.json"
 
-import { motion } from "framer-motion"
-
+import TransitionWrapper from "@/components/TransitionWrapper"
 import Image from "next/image"
 import Link from "next/link"
 import { ScrollArea } from "@/components/ui/scroll-area"
@@ -18,12 +16,9 @@ const notoSans = Noto_Sans({
 const page = () => {
   return (
     <ScrollArea className="w-full">
-      <motion.div
-        className="w-full max-w-screen-lg 2xl:max-w-screen-2xl mx-auto flex flex-col px-10"
-        transition={{delay: 0.1, duration: 1}}
-        initial={{opacity: 0, y: 20}}
-        animate={{opacity: 1, y: 0}}
-      >
+      <TransitionWrapper
+      delay={0.1}
+      className="w-full max-w-screen-lg 2xl:max-w-screen-2xl mx-auto flex flex-col px-10">
         <div className={`w-full text-2xl xl:text-3xl py-10 ${notoSans.className}`}>
         "True north in software is often the direction that combines ambiguity and evidence of fertility in the most alluring way: the direction of maximal interestingness.”
         </div>
@@ -44,7 +39,7 @@ const page = () => {
             </div>
           </Link>
         ))}
-      </motion.div>
+      </TransitionWrapper>
     </ScrollArea>
   )
 }
