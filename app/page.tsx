@@ -7,8 +7,7 @@ export default function Home() {
   return (
     <>
       <TransitionWrapper delay={0.1} className="max-w-lg text-lg leading-6">
-        I'm a <RotatingTitle /> from Singapore exploring how data and software
-        can be applied to novel problems
+        I&apos;m a <RotatingTitle /> from Singapore exploring how data and software can be applied to novel problems
       </TransitionWrapper>
       <div className="flex justify-between h-full gap-x-10">
         <TransitionWrapper

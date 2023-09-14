@@ -10,7 +10,7 @@ const Timeline = ({ events, isActive }: {events: ProjectProps[], isActive: boole
   return (
     <div className="flex flex-col">
       {events.map((event, index) => (
-        <div className="flex gap-x-5">
+        <div className="flex gap-x-5" key={index}>
           <div className="flex flex-col">
             <div className="flex w-8 h-8 rounded-full border-2 w-8 h-8">
               <FaRegFlag className="m-auto w-[14px] h-[14px]"/>
