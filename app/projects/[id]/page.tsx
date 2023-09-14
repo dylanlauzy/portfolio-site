@@ -52,7 +52,7 @@ const page = ({ params }: { params: { id: string}}) => {
               <ul className="flex flex-col gap-y-3 text-sm">
                 {project?.features?.map((feature: string) => (
                   <li className="flex items-start gap-x-1">
-                    <Image className="mt-1" src="/icons/check.svg" alt="check" width={16} height={16}></Image>
+                    <Image className="mt-1" src="/icons/check.svg" alt="check" width={16} height={16} />
                     <span>{feature}</span>
                   </li>
                 ))}

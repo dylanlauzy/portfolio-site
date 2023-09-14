@@ -23,19 +23,28 @@
     ],
     "timeline": [
       {
-        "icon": "/icons/moon.svg",
         "date": "April 22nd 2023",
-        "body": "Wrote down first idea: \"Top Trumps but for NBA Player Stats\""
+        "body": "Came up with project idea: \"Top Trumps but for NBA Player Stats\""
       },
       {
-        "icon": "/icons/sun.svg",
-        "date": "May 23rd 2023",
-        "body": "Started brainstorming and planning features, tech stack and design"
+        "date": "May 27th 2023",
+        "body": "First commit: developing AWS Lambda function for fetching player data"
       },
       {
-        "icon": "/icons/moon.svg",
-        "date": "May 25th 2023",
-        "body": "Started learning Figma and creating basic game UI"
+        "date": "May 30th 2023",
+        "body": "Basic game UI designed in Figma and implemented with React and Tailwind"
+      },
+      {
+        "date": "June 26th 2023",
+        "body": "Development of GraphQL reducers for managing game state in DynamoDB database"
+      },
+      {
+        "date": "July 13th 2023",
+        "body": "Main game logic implemented and first prototype locally tested with friends"
+      },
+      {
+        "date": "July 22nd 2023",
+        "body": "First deployment of game via Railway and first online test game with friends"
       }
     ],
     "is_active": true
@@ -54,7 +63,7 @@
       "Axios",
       "JSON Web Tokens"
     ],
-    "description_long": "Built with three friends at StormHacks 2023, Panda Path is a iOS and Android app built with React Native that helps people safely get where they want to go. The app allows users to enter their destination and generates a path that avoids areas deemed dangerous by Vancouver Police crime data. Working on the app's backend, I designed and implemented the REST API for managing authentication and user data using Express JS, JSON Web Tokens. Collaborating with the designers on our team, I then worked on turning our design into a dynamic frontend with React Native.",
+    "description_long": "Built with three friends at StormHacks 2023, Panda Path is a iOS and Android app built with React Native that helps people safely get where they want to go. After entering their destination, users are shown the path that avoids areas thought to be dangerous according to Vancouver Police crime data. Working on the app's backend, I designed and implemented the REST API for managing authentication and user data using Express JS, JSON Web Tokens. Collaborating with the designers on our team, I then worked on turning our design into a dynamic frontend with React Native.",
     "motivations": "A common concern we identified among students going to school in a new city is the fear of ending up in a dangerous part of town while getting around. Our solution was to use Vancouver Police Department crime data to highlight dangerous areas and generate optimal walking paths that avoid those areas. Over 24 hours, we worked through the night to deliver on our idea and this is what we ended up with.",
     "features": [
       "Cross-platform app built with React Native and CSS",
@@ -65,24 +74,12 @@
     ],
     "timeline": [
       {
-        "icon": "/icons/moon.svg",
-        "date": "May 20th 2023",
-        "body": "Team came together for brainstorming"
+        "date": "12pm May 20th 2023",
+        "body": "24hr countdown begins. Delegation and planning commences"
       },
       {
-        "icon": "/icons/moon.svg",
-        "date": "May 20th 2023",
-        "body": "Delegation of work"
-      },
-      {
-        "icon": "/icons/moon.svg",
-        "date": "May 20th 2023",
-        "body": "Coding tirelessly through the night"
-      },
-      {
-        "icon": "/icons/moon.svg",
-        "date": "May 20th 2023",
-        "body": "Delegation of work"
+        "date": "12pm May 21st 2023",
+        "body": "After a long night of many problems and little sleep, submission is in!"
       }
     ],
     "is_active": false
@@ -98,6 +95,28 @@
       "GPT-3.5",
       "React",
       "Material UI"
-    ]
+    ],
+    "description_long": "Project Panini a React-based web app that helps developers come up with their next great project idea. We came up with the idea as part of nwHacks 2023 and worked tirelessly through the night to deliver a search-engine-like interface that turns user-entered keywords into fully fledged project ideas. After settling on an idea they like, users can add projects to their dashboard of ongoing projects and plan what they need to work on to get their project to completion.",
+    "motivations": "Inspired by the proliferation of LLM powered applications, our team tried to solve a problem faced by many of our peers in computer science: coming up with exciting project ideas to work on and push forward their programming knowledge.",
+    "features": [
+      "Dynamic user interface powered by React",
+      "GPT-3 powered project suggestions unique to your interests",
+      "User dashboard for centrally managing project ideas"
+    ],
+    "timeline": [
+      {
+        "date": "12pm January 21st 2023",
+        "body": "The hackathon kicks off with some brainstorming and planning."
+      },
+      {
+        "date": "12am January 22nd 2023",
+        "body": "After a long day of coding, we have a functioning unpolished prototype."
+      },
+      {
+        "date": "12pm May 21st 2023",
+        "body": "The project is in! Time to get some sleep."
+      }
+    ],
+    "is_active": false
   }
 ]

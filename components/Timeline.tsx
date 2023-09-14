@@ -1,8 +1,8 @@
+import { FaRegFlag } from "react-icons/fa"
 import Image from "next/image";
 
 interface ProjectProps {
   date: string;
-  icon: string;
   body: string;
 }
 
@@ -13,7 +13,7 @@ const Timeline = ({ events, isActive }: {events: ProjectProps[], isActive: boole
         <div className="flex gap-x-5">
           <div className="flex flex-col">
             <div className="flex w-8 h-8 rounded-full border-2 w-8 h-8">
-              <Image className="m-auto" src={event.icon} alt="icon" width={14} height={14}/>
+              <FaRegFlag className="m-auto w-[14px] h-[14px]"/>
             </div>
             {(isActive || index != events.length - 1) && (
               <div className="w-0.5 grow bg-accent self-center"></div>
