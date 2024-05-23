@@ -20,7 +20,7 @@ export default function Page() {
         className="w-full max-w-screen-lg 2xl:max-w-screen-xl mx-auto flex flex-col gap-y-7 px-10"
       >
         <section className="py-10 flex gap-x-20 items-center justify-center">
-          <div className={`${notoSans.className} text-4xl w-[32rem]`}>{"I'm Dylan, a developer, student and explorer of cool stuff."}</div>
+          <div className={`${notoSans.className} text-4xl w-[32rem]`}>{about.tagline}</div>
           <div className="relative h-56 w-56">
             <Image
               key="/images/me.png"

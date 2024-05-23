@@ -19,9 +19,9 @@ const page = () => {
       <TransitionWrapper
       delay={0.1}
       className="w-full max-w-screen-lg 2xl:max-w-screen-2xl mx-auto flex flex-col px-10">
-        <div className={`w-full text-2xl xl:text-3xl py-10 ${notoSans.className}`}>
+        {/* <div className={`w-full text-2xl xl:text-3xl py-10 ${notoSans.className}`}>
         &ldquo;True north in software is often the direction that combines ambiguity and evidence of fertility in the most alluring way: the direction of maximal interestingness.&rdquo;
-        </div>
+        </div> */}
         {projects.map((project, key) => (
           <Link href={`/projects/${project.id}`} className={`flex w-full border-t-2 py-12 gap-x-3`} key={key}>
             <div className="relative w-full aspect-[5/3] border-2">

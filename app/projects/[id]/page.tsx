@@ -59,7 +59,7 @@ const page = ({ params }: { params: { id: string}}) => {
               </ul>
             </div>
             <div className="w-full flex flex-col gap-y-2">
-              <h4 className="font-bold">Timeline</h4>
+              <h4 className="font-bold">Milestones</h4>
               {project.timeline && <Timeline events={project.timeline} isActive={project.is_active}/>}
             </div>
           </div>
